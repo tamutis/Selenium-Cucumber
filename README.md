@@ -7,6 +7,6 @@
 	  -  Login Sucesso
 	  -  Login Inválido. 
 	  -  Login em Branco.
-        -  Utilizando page objects pattern.
-        - Gerarando relatório dos testes.
+	  -  Utilizando page objects pattern.
+	  - Gerarando relatório dos testes.
 
