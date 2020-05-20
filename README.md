@@ -10,7 +10,7 @@
 	  -  Utilizando page objects pattern.
 	  - Gerarando relatório dos testes.
 
-## Cucumber/Seleniu, 
+## Cucumber/Selenium 
 
 	Objetivo:
 	O Cucumber interpreta os testes na linguagem de programação especificada e utiliza o Selenium para conduzir os casos de teste em um navegador
