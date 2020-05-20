@@ -8,5 +8,5 @@
 	  -  Login Inválido. 
 	  -  Login em Branco.
           -  Utilizando page objects pattern.
-          -  Gerarando relatório dos testes.
+          - Gerarando relatório dos testes.
 
