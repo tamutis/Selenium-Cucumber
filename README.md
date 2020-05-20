@@ -14,3 +14,12 @@
 
 	Objetivo:
 	O Cucumber interpreta os testes na linguagem de programação especificada e utiliza o Selenium para conduzir os casos de teste em um navegador
+
+## Rodar os Testes via Prompt
+
+	Exemplo: 
+	
+	- Abri o prompt na pasta do projeto
+        - mvn clean
+        - mvn compile
+        - mvn verify
