@@ -23,4 +23,5 @@
         - mvn compile
         - mvn verify
 
-![cucumber](https://user-images.githubusercontent.com/20347604/82463539-5549ee80-9a93-11ea-97d8-a1a841d2fffd.PNG)
+![cucumber](https://user-images.githubusercontent.com/20347604/82463713-87f3e700-9a93-11ea-9381-1b7a297ef0eb.PNG)
+
