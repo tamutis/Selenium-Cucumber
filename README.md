@@ -18,8 +18,7 @@
 ## Rodar os Testes via Prompt
 
 	Exemplo: 
-	
-	- Abri o prompt na pasta do projeto
+	 Abri o prompt na pasta do projeto:
         - mvn clean
         - mvn compile
         - mvn verify
