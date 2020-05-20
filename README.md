@@ -2,11 +2,11 @@
 
 
 ## Características: 
-  	- Criar um projeto de automação 
-	  - Efetuar um cadastro e que também contenha os cenários (em BDD)
+  	  -  Criar um projeto de automação 
+	  -  Efetuar um cadastro e que também contenha os cenários (em BDD)
 	  -  Login Sucesso
 	  -  Login Inválido. 
-	  - Login em Branco.
-    - Utilizando page objects pattern.
-    -  Gerarando relatório dos testes.
+	  -  Login em Branco.
+          -  Utilizando page objects pattern.
+          -  Gerarando relatório dos testes.
 
