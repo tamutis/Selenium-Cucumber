@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.com.ame.runner.LoginRunnerTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 51.103 s - in br.com.ame.runner.LoginRunnerTest

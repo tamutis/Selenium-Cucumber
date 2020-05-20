@@ -1,0 +1,397 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: pt"
+      },
+      {
+        "line": 2,
+        "value": "# encoding: iso-8859-1"
+      },
+      {
+        "line": 3,
+        "value": "#Autor: Andre Luiz Tamutis"
+      }
+    ],
+    "line": 5,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6472285300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginTest.inicializa()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Login com Sucesso",
+        "description": "",
+        "id": "efetuar-um-cadastro-e-que-também-contenha-os-cenários-(em-bdd);login-com-sucesso",
+        "after": [
+          {
+            "result": {
+              "duration": 150242900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginTest.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1962363500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginTest.finaliza()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 7739247000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que estou acessando a aplicação",
+            "match": {
+              "location": "LoginTest.queEstouAcessandoAAplicação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 136290700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "informo o usuario \"teste@getnada.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "teste@getnada.com",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginTest.informoOUsuario(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 2636301200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "informo a senha \"102030\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "102030",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginTest.informoASenha(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 53215600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "devo ver \"My account\" na área logada.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My account",
+                  "offset": 10
+                }
+              ],
+              "location": "LoginTest.devoVerNaÁreaLogada(String)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@login_happy"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4822933000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginTest.inicializa()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Login Inválido",
+        "description": "",
+        "id": "efetuar-um-cadastro-e-que-também-contenha-os-cenários-(em-bdd);login-inválido;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 132330000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginTest.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1754653900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginTest.finaliza()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 7856792900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "que estou acessando a aplicação",
+            "match": {
+              "location": "LoginTest.queEstouAcessandoAAplicação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 96792700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "informo o usuario \"teste@getnada\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "teste@getnada",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginTest.informoOUsuario(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1348876000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "informo a senha \"102030\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "102030",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginTest.informoASenha(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 50506700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "recebo a mensagem \"Invalid email address.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid email address.",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginTest.receboAMensagem(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@login"
+          },
+          {
+            "line": 14,
+            "name": "@login_hapless"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4804062700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginTest.inicializa()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Login Inválido",
+        "description": "",
+        "id": "efetuar-um-cadastro-e-que-também-contenha-os-cenários-(em-bdd);login-inválido;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 119335900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginTest.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1701863800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginTest.finaliza()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 7256515800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "que estou acessando a aplicação",
+            "match": {
+              "location": "LoginTest.queEstouAcessandoAAplicação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 70505500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "informo o usuario \"  \"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "  ",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginTest.informoOUsuario(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 953600600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "informo a senha \"       \"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "       ",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginTest.informoASenha(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 40611200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "recebo a mensagem \"An email address required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "An email address required.",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginTest.receboAMensagem(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@login"
+          },
+          {
+            "line": 14,
+            "name": "@login_hapless"
+          }
+        ]
+      }
+    ],
+    "name": "efetuar um cadastro e que também contenha os cenários (em BDD)",
+    "description": "",
+    "id": "efetuar-um-cadastro-e-que-também-contenha-os-cenários-(em-bdd)",
+    "keyword": "Funcionalidade",
+    "uri": "C:/Users/NOTE ASIS-724/Downloads/java/Ame/src/test/resources/Feature/Login.Feature",
+    "tags": [
+      {
+        "line": 4,
+        "name": "@login"
+      }
+    ]
+  }
+]
