@@ -14,6 +14,10 @@ public class LoginPage {
 	
 	public void visita() {
 		driver.get(new URLBase().getUrlBase());
+		
+	}
+	
+	public void clicLogin() {
 		driver.findElement(By.className("login")).click();
 	}
 	

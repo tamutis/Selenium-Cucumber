@@ -38,6 +38,8 @@ public class LoginTest {
 	@Dado("^que estou acessando a aplicação$")
 	public void queEstouAcessandoAAplicação() throws Throwable {
 		login.visita();
+		
+		login.clicLogin();
 	}
 
 	@Quando("^informo o usuario \"([^\"]*)\"$")
