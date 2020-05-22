@@ -20,16 +20,19 @@ import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 
-public class LoginTest {
+public class LoginTest{
 
 	private WebDriver driver;
 	private LoginPage login;
 
-	@Before(value ="@login")
+	@Before(order = 0, value ="@login")
 	public void inicializa() {
 		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		login = new LoginPage(driver);
+		login.visita();
+		login.clicLogin();
+	
 
 	}
 
@@ -37,10 +40,8 @@ public class LoginTest {
 	
 	@Dado("^que estou acessando a aplicação$")
 	public void queEstouAcessandoAAplicação() throws Throwable {
-		login.visita();
-		
-		login.clicLogin();
 	}
+	
 
 	@Quando("^informo o usuario \"([^\"]*)\"$")
 	public void informoOUsuario(String email) throws Throwable {
@@ -63,7 +64,7 @@ public class LoginTest {
 		assertEquals(login.alert(mensagem), mensagem);
 	}
 
-	@After(order = 0, value = "@login")
+	@After(order = 1, value = "@login")
 	public void screenshot(Scenario cenario) {
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
