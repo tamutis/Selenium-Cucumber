@@ -20,28 +20,26 @@ import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 
-public class LoginTest{
+public class LoginTest {
 
 	private WebDriver driver;
 	private LoginPage login;
 
-	@Before(order = 0, value ="@login")
+	@Before(value = "@login")
 	public void inicializa() {
 		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 		login = new LoginPage(driver);
 		login.visita();
 		login.clicLogin();
-	
-
 	}
 
 	@Test
-	
+
 	@Dado("^que estou acessando a aplicação$")
 	public void queEstouAcessandoAAplicação() throws Throwable {
+
 	}
-	
 
 	@Quando("^informo o usuario \"([^\"]*)\"$")
 	public void informoOUsuario(String email) throws Throwable {
