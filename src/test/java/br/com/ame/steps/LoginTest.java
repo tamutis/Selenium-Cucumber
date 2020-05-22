@@ -28,7 +28,7 @@ public class LoginTest {
 	@Before(value ="@login")
 	public void inicializa() {
 		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 		login = new LoginPage(driver);
 
 	}
