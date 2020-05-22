@@ -17,7 +17,7 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
-import cucumber.api.java.pt.Ent„o;
+import cucumber.api.java.pt.Ent√£o;
 import cucumber.api.java.pt.Quando;
 
 public class LoginTest {
@@ -35,8 +35,8 @@ public class LoginTest {
 
 	@Test
 	
-	@Dado("^que estou acessando a aplicaÁ„o$")
-	public void queEstouAcessandoAAplicaÁ„o() throws Throwable {
+	@Dado("^que estou acessando a aplica√ß√£o$")
+	public void queEstouAcessandoAAplica√ß√£o() throws Throwable {
 		login.visita();
 		
 		login.clicLogin();
@@ -52,18 +52,18 @@ public class LoginTest {
 		login.loginSenha(senha);
 	}
 
-	@Ent„o("^devo ver \"([^\"]*)\" na ·rea logada\\.$")
-	public void devoVerNa¡reaLogada(String alert) throws Throwable {
+	@Ent√£o("^devo ver \"([^\"]*)\" na √°rea logada\\.$")
+	public void devoVerNa√ÅreaLogada(String alert) throws Throwable {
 		assertEquals(login.alertHome(alert), "My account");
 	}
 
-	@Ent„o("^recebo a mensagem \"([^\"]*)\"$")
+	@Ent√£o("^recebo a mensagem \"([^\"]*)\"$")
 	public void receboAMensagem(String mensagem) throws Throwable {
 
 		assertEquals(login.alert(mensagem), mensagem);
 	}
 
-	@After(order = 0, value = "@login")
+	@After(order = 1, value = "@login")
 	public void screenshot(Scenario cenario) {
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
