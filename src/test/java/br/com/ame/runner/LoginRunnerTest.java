@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
 		plugin = {"pretty","json:target/login/cucumber.json", "html:target/json/login/cucumber-pretty"},
 		monochrome = true, 
 		snippets = SnippetType.CAMELCASE,
-		dryRun = true,
+		dryRun = false,
 		strict = false
 		)
 
