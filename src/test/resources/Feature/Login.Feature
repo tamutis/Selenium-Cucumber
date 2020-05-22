@@ -19,6 +19,7 @@ Funcionalidade: efetuar um cadastro e que também contenha os cenários (em BDD)
     Então recebo a mensagem <mensagem>
 
     Exemplos: 
-      | email               | senha     | mensagem                     |
-      | "teste@getnada"     | "102030"  | "Invalid email address."     |
-      | "  "                | "       " | "An email address required." |
+      | email               | senha    | mensagem                     |
+      | "teste@getnada"     | "102030" | "Invalid email address."     |
+      | "              "    | "102030" | "An email address required." |
+      | "teste@getnada.com" | "      " | "Password is required."      |

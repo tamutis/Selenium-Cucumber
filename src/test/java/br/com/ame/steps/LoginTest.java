@@ -6,6 +6,7 @@ import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.junit.Test;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +15,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import br.com.ame.page.LoginPage;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
@@ -23,13 +25,16 @@ public class LoginTest {
 	private WebDriver driver;
 	private LoginPage login;
 
-	@cucumber.api.java.Before(value = "@login")
+	@Before(value ="@login")
 	public void inicializa() {
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		login = new LoginPage(driver);
+
 	}
 
+	@Test
+	
 	@Dado("^que estou acessando a aplicação$")
 	public void queEstouAcessandoAAplicação() throws Throwable {
 		login.visita();
@@ -56,11 +61,11 @@ public class LoginTest {
 		assertEquals(login.alert(mensagem), mensagem);
 	}
 
-	@After(order = 1, value = { "@login" })
+	@After(order = 0, value = "@login")
 	public void screenshot(Scenario cenario) {
 		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(file, new File("target/screenshot_login/" + cenario.getId() + ".jpg"));
+			FileUtils.copyFile(file, new File("target/screenshot_login_page/" + cenario.getId() + ".jpg"));
 		} catch (Exception e) {
 
 		}
@@ -68,8 +73,9 @@ public class LoginTest {
 	}
 
 	@After(order = 0, value = "@login")
+
 	public void finaliza() {
-		driver.close();
+		driver.quit();
 	}
 
 }
